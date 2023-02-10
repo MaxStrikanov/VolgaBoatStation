@@ -32,10 +32,6 @@ body {
 	font-weight: 600;
 }
 
-.mobile-menu {
-	display: none
-}
-
 .card-item {
     display: flex;
     align-items: center;
@@ -142,11 +138,18 @@ button {
   font-size: 20px;
 }
 
-:is(.navbar, .burger) {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.mobile-menu {
+	
 }
 
+.mobile-menu.active button:nth-child(2) {
+	display: block;
+}
 
+.mobile-menu.active button:nth-child(1) {
+	display: none;
+}
 
+.mobile-menu button:nth-child(2) {
+	display: none;
+}
