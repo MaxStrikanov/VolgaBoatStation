@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	width: min(100% - 1em, 69em);
+	margin-inline: auto;
+}
+
+.header {
+    background: #0ea6bf;
+    height: 60px;
+    padding: 0px 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    line-height: 54px;
+	gap: 10px;
+}
+.menu-item a {
+	color: antiquewhite;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.mobile-menu {
+	display: none
+}
+
+.card-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.card-item h2 {
+	font-size: 16px;
+	margin: 10px 10px ;
+}
+
+.card-item div {
+	background: transparent;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+	border-left: 1px solid rgb(136, 135, 135);
+	padding-left: 10px;
+}
+
+.card-item div span {
+	font-weight: 600;
+	margin-left: 5px;
+}
+
+.icons-wrapper {
+	margin-left: auto;
+}
+
+.icons-wrapper i {
+	margin-right: 10px;
+}
+
+.content-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-block {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+	font-style: italic;
+}
+
+.content-members {
+    height: 60px;
+    background: #1c0f7a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-amount {
+    height: 60px;
+    background: #2d1d9f;
+    border-bottom: 2px solid rgb(161, 154, 154);
+}
+
+.members-title {
+	color: white;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+
+body.open .burger {
+  background-image: url("/images/close.svg");
+}
+
+@media (width >= 500px) {
+  .burger {
+    display: none;
+  }
+}
+
+.navbar {
+  z-index: 1;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  color: #f9f9f9;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 1;
+  color: inherit;
+  font-family: "Euclid Circular A";
+  font-size: 20px;
+}
+
+:is(.navbar, .burger) {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
