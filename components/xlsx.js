@@ -38,10 +38,15 @@ const checkingСertificate = () => {
                 card.insertAdjacentHTML('beforeend', `
 					
 					<div class="card-item" style ="background: ${dataList[i]['Сумма'] < 0 ? '#FF6275' : '#13CE92'}">
-						<i class="fa fa-user" aria-hidden="true"></i>
-						<h2>${dataList[i]['ФИО']}</h2>
-						<div>
-							Текущий баланс: <span>${numberWithSpaces(dataList[i]['Сумма'])}</span> руб
+                        <div class="card-item__member">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+						    <h2>${dataList[i]['ФИО']}</h2>
+                        </div>
+						
+						<div class="card-item__cur-balance">
+							<span>Текущий баланс: </span>
+                            <span>${numberWithSpaces(dataList[i]['Сумма'])}</span> 
+                            <span>руб</span>
 						</div>
 						<div class="icons-wrapper">
 							<i class="fa fa-print" aria-hidden="true"></i>
